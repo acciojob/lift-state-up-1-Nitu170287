@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Child from "./Child";
 import "./../styles/App.css";
 
@@ -8,16 +8,10 @@ const App = () => {
     showModal(true);
   };
   return (
-    <div className="parent" style={{ backgroundColor: "#7C28DE" }}>
+    <div className="parent" >
       {/* Do not remove the main div */}
       <h1>Parent Componenet</h1>
-      <Child updateParent={updateParent} />
-      {modal == true ? (
-        <div>
-          <h2>Modal Content</h2>
-          <p>This is modal content</p>
-        </div>
-      ) : null}
+      <Child updateParent={updateParent} modal={modal} />
     </div>
   );
 };
