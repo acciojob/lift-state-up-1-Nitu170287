@@ -8,9 +8,9 @@ const App = () => {
     showModal(true);
   };
   return (
-    <div className="parent" >
+    <div className="parent">
       {/* Do not remove the main div */}
-      <h1>Parent Componenet</h1>
+      <h1>Parent Component</h1>
       <Child updateParent={updateParent} modal={modal} />
     </div>
   );
